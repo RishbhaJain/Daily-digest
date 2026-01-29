@@ -1,0 +1,8 @@
+# Web Framework
+Flask==3.0.0
+
+# OpenAI API (for mock data generation - already installed)
+# openai==1.6.1
+
+# Optional: For better development experience
+python-dotenv==1.0.0

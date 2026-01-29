@@ -1,0 +1,321 @@
+[
+  {
+    "user_id": "alice",
+    "project_id": "pcb-redesign",
+    "phase": "active",
+    "channels": [
+      "#pcb-review",
+      "#electrical"
+    ],
+    "last_contributed": "2026-01-28T21:48:02.939992",
+    "messages_past_week": 5
+  },
+  {
+    "user_id": "alice",
+    "project_id": "motor-assembly",
+    "phase": "review",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "last_contributed": "2026-01-28T16:35:44.170175",
+    "messages_past_week": 2
+  },
+  {
+    "user_id": "alice",
+    "project_id": "firmware-update",
+    "phase": "review",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "last_contributed": "2026-01-19T07:37:29.543902",
+    "messages_past_week": 0
+  },
+  {
+    "user_id": "bob",
+    "project_id": "pcb-redesign",
+    "phase": "active",
+    "channels": [
+      "#pcb-review",
+      "#electrical"
+    ],
+    "last_contributed": "2026-01-28T12:03:39.884883",
+    "messages_past_week": 3
+  },
+  {
+    "user_id": "bob",
+    "project_id": "firmware-update",
+    "phase": "active",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "last_contributed": "2026-01-28T16:08:57.646549",
+    "messages_past_week": 3
+  },
+  {
+    "user_id": "carol",
+    "project_id": "pcb-redesign",
+    "phase": "active",
+    "channels": [
+      "#pcb-review",
+      "#electrical"
+    ],
+    "last_contributed": "2026-01-28T19:56:24.314202",
+    "messages_past_week": 5
+  },
+  {
+    "user_id": "carol",
+    "project_id": "firmware-update",
+    "phase": "review",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "last_contributed": "2026-01-27T21:45:52.790483",
+    "messages_past_week": 0
+  },
+  {
+    "user_id": "carol",
+    "project_id": "motor-assembly",
+    "phase": "done",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "last_contributed": "2026-01-28T08:40:13.730201",
+    "messages_past_week": 1
+  },
+  {
+    "user_id": "david",
+    "project_id": "motor-assembly",
+    "phase": "active",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "last_contributed": "2026-01-28T15:30:17.468305",
+    "messages_past_week": 3
+  },
+  {
+    "user_id": "david",
+    "project_id": "pcb-redesign",
+    "phase": "review",
+    "channels": [
+      "#pcb-review",
+      "#electrical"
+    ],
+    "last_contributed": "2026-01-25T12:42:28.141781",
+    "messages_past_week": 0
+  },
+  {
+    "user_id": "david",
+    "project_id": "firmware-update",
+    "phase": "review",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "last_contributed": "2026-01-28T11:58:56.257982",
+    "messages_past_week": 0
+  },
+  {
+    "user_id": "emma",
+    "project_id": "motor-assembly",
+    "phase": "active",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "last_contributed": "2026-01-28T22:31:33.503645",
+    "messages_past_week": 4
+  },
+  {
+    "user_id": "emma",
+    "project_id": "firmware-update",
+    "phase": "review",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "last_contributed": "2026-01-28T18:13:31.213713",
+    "messages_past_week": 2
+  },
+  {
+    "user_id": "emma",
+    "project_id": "pcb-redesign",
+    "phase": "review",
+    "channels": [
+      "#pcb-review",
+      "#electrical"
+    ],
+    "last_contributed": "2026-01-28T07:30:00.401338",
+    "messages_past_week": 1
+  },
+  {
+    "user_id": "frank",
+    "project_id": "motor-assembly",
+    "phase": "active",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "last_contributed": "2026-01-28T18:34:54.209689",
+    "messages_past_week": 5
+  },
+  {
+    "user_id": "frank",
+    "project_id": "firmware-update",
+    "phase": "review",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "last_contributed": "2026-01-27T06:51:38.531356",
+    "messages_past_week": 0
+  },
+  {
+    "user_id": "grace",
+    "project_id": "firmware-update",
+    "phase": "review",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "last_contributed": "2026-01-28T13:33:43.164097",
+    "messages_past_week": 2
+  },
+  {
+    "user_id": "grace",
+    "project_id": "motor-assembly",
+    "phase": "review",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "last_contributed": "2026-01-28T18:48:31.234758",
+    "messages_past_week": 1
+  },
+  {
+    "user_id": "grace",
+    "project_id": "pcb-redesign",
+    "phase": "review",
+    "channels": [
+      "#pcb-review",
+      "#electrical"
+    ],
+    "last_contributed": "2026-01-17T06:58:41.142549",
+    "messages_past_week": 0
+  },
+  {
+    "user_id": "henry",
+    "project_id": "firmware-update",
+    "phase": "active",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "last_contributed": "2026-01-28T19:02:56.932188",
+    "messages_past_week": 4
+  },
+  {
+    "user_id": "henry",
+    "project_id": "pcb-redesign",
+    "phase": "review",
+    "channels": [
+      "#pcb-review",
+      "#electrical"
+    ],
+    "last_contributed": "2026-01-27T10:44:56.275688",
+    "messages_past_week": 0
+  },
+  {
+    "user_id": "henry",
+    "project_id": "motor-assembly",
+    "phase": "done",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "last_contributed": "2026-01-28T17:15:26.828173",
+    "messages_past_week": 2
+  },
+  {
+    "user_id": "ivan",
+    "project_id": "pcb-redesign",
+    "phase": "active",
+    "channels": [
+      "#pcb-review",
+      "#electrical"
+    ],
+    "last_contributed": "2026-01-28T19:15:04.780071",
+    "messages_past_week": 3
+  },
+  {
+    "user_id": "ivan",
+    "project_id": "motor-assembly",
+    "phase": "review",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "last_contributed": "2026-01-28T10:14:23.869166",
+    "messages_past_week": 2
+  },
+  {
+    "user_id": "ivan",
+    "project_id": "firmware-update",
+    "phase": "review",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "last_contributed": "2026-01-27T06:27:08.841291",
+    "messages_past_week": 0
+  },
+  {
+    "user_id": "julia",
+    "project_id": "pcb-redesign",
+    "phase": "active",
+    "channels": [
+      "#pcb-review",
+      "#electrical"
+    ],
+    "last_contributed": "2026-01-28T17:47:51.214320",
+    "messages_past_week": 3
+  },
+  {
+    "user_id": "julia",
+    "project_id": "motor-assembly",
+    "phase": "active",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "last_contributed": "2026-01-28T21:25:55.633661",
+    "messages_past_week": 2
+  },
+  {
+    "user_id": "julia",
+    "project_id": "firmware-update",
+    "phase": "active",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "last_contributed": "2026-01-28T19:58:19.852151",
+    "messages_past_week": 3
+  },
+  {
+    "user_id": "bob",
+    "project_id": "motor-assembly",
+    "phase": "review",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "last_contributed": "2026-01-28T22:31:33.503645",
+    "messages_past_week": 0
+  }
+]

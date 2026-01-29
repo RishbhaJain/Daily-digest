@@ -1,0 +1,56 @@
+[
+  {
+    "project_id": "pcb-redesign",
+    "name": "PCB Redesign",
+    "channels": [
+      "#pcb-review",
+      "#electrical"
+    ],
+    "keywords": [
+      "PCB",
+      "circuit",
+      "layout",
+      "schematic",
+      "capacitor",
+      "resistor",
+      "trace",
+      "board"
+    ]
+  },
+  {
+    "project_id": "motor-assembly",
+    "name": "Motor Assembly",
+    "channels": [
+      "#mechanical",
+      "#motor-debug"
+    ],
+    "keywords": [
+      "motor",
+      "assembly",
+      "torque",
+      "shaft",
+      "bearing",
+      "gear",
+      "housing",
+      "CAD"
+    ]
+  },
+  {
+    "project_id": "firmware-update",
+    "name": "Firmware Update",
+    "channels": [
+      "#firmware",
+      "#embedded"
+    ],
+    "keywords": [
+      "firmware",
+      "embedded",
+      "flash",
+      "bootloader",
+      "register",
+      "interrupt",
+      "driver",
+      "RTOS"
+    ]
+  }
+]

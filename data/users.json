@@ -1,0 +1,52 @@
+[
+  {
+    "user_id": "alice",
+    "name": "Alice Chen",
+    "role": "electrical_engineer"
+  },
+  {
+    "user_id": "bob",
+    "name": "Bob Martinez",
+    "role": "electrical_engineer"
+  },
+  {
+    "user_id": "carol",
+    "name": "Carol Johnson",
+    "role": "electrical_engineer"
+  },
+  {
+    "user_id": "david",
+    "name": "David Kim",
+    "role": "mechanical_engineer"
+  },
+  {
+    "user_id": "emma",
+    "name": "Emma Wilson",
+    "role": "mechanical_engineer"
+  },
+  {
+    "user_id": "frank",
+    "name": "Frank Brown",
+    "role": "mechanical_engineer"
+  },
+  {
+    "user_id": "grace",
+    "name": "Grace Lee",
+    "role": "firmware_engineer"
+  },
+  {
+    "user_id": "henry",
+    "name": "Henry Zhang",
+    "role": "firmware_engineer"
+  },
+  {
+    "user_id": "ivan",
+    "name": "Ivan Patel",
+    "role": "pm"
+  },
+  {
+    "user_id": "julia",
+    "name": "Julia Santos",
+    "role": "engineering_lead"
+  }
+]

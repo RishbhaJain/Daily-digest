@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Digest Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Digest Tool</h1>
+            <p class="subtitle">Your personalized Slack message digest</p>
+        </header>
+
+        <main>
+            <div class="selection-card">
+                <h2>Select a User</h2>
+                <form action="/digest" method="get">
+                    <div class="form-group">
+                        <label for="user_id">Choose a team member:</label>
+                        <select name="user_id" id="user_id" required>
+                            <option value="">-- Select User --</option>
+                            {% for user in users %}
+                            <option value="{{ user.user_id }}">{{ user.name }} ({{ user.role.replace('_', ' ').title() }})</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Generate Digest</button>
+                </form>
+            </div>
+
+            <div class="info-card">
+                <h3>How it works</h3>
+                <ul>
+                    <li><strong>Project-Phase Filtering:</strong> Messages are filtered based on your relationship to projects</li>
+                    <li><strong>Active Projects:</strong> Show all messages with high priority</li>
+                    <li><strong>Review Projects:</strong> Show summaries only with medium priority</li>
+                    <li><strong>Done Projects:</strong> Filtered out unless you're mentioned</li>
+                    <li><strong>Urgent Items:</strong> Blockers and urgent messages always appear first</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>EverCurrent Daily Digest Tool - Project-Phase Filtering System</p>
+        </footer>
+    </div>
+</body>
+</html>

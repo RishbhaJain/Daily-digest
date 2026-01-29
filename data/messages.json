@@ -1,0 +1,854 @@
+[
+  {
+    "id": "msg_0049",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "emma",
+    "text": "Ordering more torque wrenches. Ours seem to be calibrated incorrectly.",
+    "timestamp": "2026-01-28T22:31:33.503645",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0039",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "alice",
+    "text": "The 50-ohm traces check out. Good catch @bob!",
+    "timestamp": "2026-01-28T21:48:02.939992",
+    "mentions": [
+      "bob"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0000",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "alice",
+    "text": "Just wrapped up the V2 schematic. Ready for review. Let me know your thoughts, @bob, @carol.",
+    "timestamp": "2026-01-28T21:30:10.834057",
+    "mentions": [
+      "bob",
+      "carol"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0060",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "julia",
+    "text": "Budget approval finalized for new tools and equipment. Proceed with purchasing.",
+    "timestamp": "2026-01-28T21:25:55.633661",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0066",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "alice",
+    "text": "Lunch is in the pantry, free to grab! Enjoy! \ud83d\ude0a",
+    "timestamp": "2026-01-28T20:07:17.113362",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0048",
+    "channel": "#embedded",
+    "thread_id": null,
+    "sender": "julia",
+    "text": "Temporary dev board setup instructions are now shared. Let me know if it works for you.",
+    "timestamp": "2026-01-28T19:58:19.852151",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0056",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "carol",
+    "text": "Adding @alice to the review of the sensor interface on the new design.",
+    "timestamp": "2026-01-28T19:56:24.314202",
+    "mentions": [
+      "alice"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0046",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "ivan",
+    "text": "All, please update the PCB tracking sheet by EOD. Thanks!",
+    "timestamp": "2026-01-28T19:15:04.780071",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0024",
+    "channel": "#firmware",
+    "thread_id": null,
+    "sender": "henry",
+    "text": "Found a major bug in the PWM configuration. This may delay the release a bit. @grace let's discuss.",
+    "timestamp": "2026-01-28T19:02:56.932188",
+    "mentions": [
+      "grace"
+    ],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0044",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "grace",
+    "text": "Troubleshooting unexpected behavior during braking cycles. Requires validation.",
+    "timestamp": "2026-01-28T18:48:31.234758",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0019",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "frank",
+    "text": "Finished the initial CAD model for the new motor housing. Review when you have time.",
+    "timestamp": "2026-01-28T18:34:54.209689",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0042",
+    "channel": "#embedded",
+    "thread_id": null,
+    "sender": "emma",
+    "text": "Exploring options to optimize our current motor control setup. Open to suggestions!",
+    "timestamp": "2026-01-28T18:13:31.213713",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0013",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "emma",
+    "text": "Just finished running the thermal tests. All motors stayed within the safe zone.",
+    "timestamp": "2026-01-28T18:03:59.927902",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0020",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "alice",
+    "text": "Does anyone remember where we documented the latest resistor values?",
+    "timestamp": "2026-01-28T17:50:47.286179",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0033",
+    "channel": "#embedded",
+    "thread_id": null,
+    "sender": "henry",
+    "text": "Access to the dev board is limited right now. We need to time-share until new units arrive.",
+    "timestamp": "2026-01-28T17:48:21.502529",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0062",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "julia",
+    "text": "Plan for a mini milestone review this Friday. Clear your schedules, everyone.",
+    "timestamp": "2026-01-28T17:47:51.214320",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0064",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "emma",
+    "text": "Running late today. Can someone else start on the first setup, please?",
+    "timestamp": "2026-01-28T17:47:02.852856",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0018",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "ivan",
+    "text": "@carol, @alice, any updates on the new PCB delivery timeline?",
+    "timestamp": "2026-01-28T17:42:11.071055",
+    "mentions": [
+      "carol",
+      "alice"
+    ],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0035",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "ivan",
+    "text": "@bob Could you update the team on the status of the parts inventory?",
+    "timestamp": "2026-01-28T17:27:24.697550",
+    "mentions": [
+      "bob"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0041",
+    "channel": "#firmware",
+    "thread_id": null,
+    "sender": "julia",
+    "text": "Reviewed the recent firmware tests. Great improvements, everyone!",
+    "timestamp": "2026-01-28T17:21:49.398678",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0045",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "henry",
+    "text": "@emma Can you check if the new firmware addresses the encoder issues?",
+    "timestamp": "2026-01-28T17:15:26.828173",
+    "mentions": [
+      "emma"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0030",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "alice",
+    "text": "Does anyone need anything from the lab? Heading there now. \ud83d\ude04",
+    "timestamp": "2026-01-28T16:35:44.170175",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0028",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "julia",
+    "text": "Let's meet briefly to finalize the PCB layout approvals before weekend.",
+    "timestamp": "2026-01-28T16:16:36.737419",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0063",
+    "channel": "#firmware",
+    "thread_id": null,
+    "sender": "bob",
+    "text": "Who has the JTAG adapter? I need it for debugging EEPROM.",
+    "timestamp": "2026-01-28T16:08:57.646549",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0057",
+    "channel": "#firmware",
+    "thread_id": null,
+    "sender": "emma",
+    "text": "Doing a walkthrough on recent firmware changes at 2 PM. Join if you can!",
+    "timestamp": "2026-01-28T15:51:07.650326",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0031",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "david",
+    "text": "Is anyone else hearing a weird sound from the motor at high RPMs, or is it just my setup?",
+    "timestamp": "2026-01-28T15:30:17.468305",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0051",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "alice",
+    "text": "Reminder: Electrical lab clean-up at 4 PM today. Please assist!",
+    "timestamp": "2026-01-28T15:03:45.034400",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0043",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "frank",
+    "text": "@bob, @alice Can you confirm the capacitor values needed for the new PCB design?",
+    "timestamp": "2026-01-28T14:21:40.674686",
+    "mentions": [
+      "bob",
+      "alice"
+    ],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0005",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "emma",
+    "text": "Ordered the new batch of bearings for testing. Expected delivery is next Tuesday.",
+    "timestamp": "2026-01-28T14:04:04.719551",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0009",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "carol",
+    "text": "Can someone recheck the voltage levels at the input of IC3? Seems off in the latest test.",
+    "timestamp": "2026-01-28T13:49:59.800197",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0010",
+    "channel": "#embedded",
+    "thread_id": null,
+    "sender": "grace",
+    "text": "Hey @henry, could you review the latest commit on the motor control algorithm?",
+    "timestamp": "2026-01-28T13:33:43.164097",
+    "mentions": [
+      "henry"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0054",
+    "channel": "#embedded",
+    "thread_id": null,
+    "sender": "henry",
+    "text": "Who can provide access to the extended test results from last firmware iteration?",
+    "timestamp": "2026-01-28T13:16:03.165226",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0032",
+    "channel": "#firmware",
+    "thread_id": null,
+    "sender": "grace",
+    "text": "Documented the test results for the new communication protocol. Ready for feedback.",
+    "timestamp": "2026-01-28T13:15:17.063250",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0017",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "david",
+    "text": "Need confirmation on the size of the new gear. Sending specs for review.",
+    "timestamp": "2026-01-28T13:09:32.537199",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0050",
+    "channel": "#firmware",
+    "thread_id": null,
+    "sender": "bob",
+    "text": "Stuck on debugging the PWM sync issue. Could use a fresh pair of eyes @grace.",
+    "timestamp": "2026-01-28T12:51:31.669213",
+    "mentions": [
+      "grace"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0015",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "bob",
+    "text": "Leaving early today. Will catch up on PCB review first thing tomorrow!",
+    "timestamp": "2026-01-28T12:03:39.884883",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0026",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "frank",
+    "text": "FYI: I'll be running a cycle test on the motors overnight. Please do not disconnect any setups.",
+    "timestamp": "2026-01-28T11:59:56.776107",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0065",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "henry",
+    "text": "@frank Still facing voltage fluctuation issues. Need to run diagnostics together.",
+    "timestamp": "2026-01-28T11:44:27.014184",
+    "mentions": [
+      "frank"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0053",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "frank",
+    "text": "FYI: The new batch of alloy for gears passed material testing.",
+    "timestamp": "2026-01-28T11:00:20.216589",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0021",
+    "channel": "#embedded",
+    "thread_id": null,
+    "sender": "julia",
+    "text": "I'll need everyone's input on the next firmware sprint goals. Meeting at 10 AM tomorrow.",
+    "timestamp": "2026-01-28T10:49:53.355712",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0016",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "carol",
+    "text": "Lead placement looks good. Thankful there were no major reroutes required. Cheers!",
+    "timestamp": "2026-01-28T10:18:24.852690",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0006",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "frank",
+    "text": "Optimization of the torque settings improved the response time. @emma, can you verify?",
+    "timestamp": "2026-01-28T10:15:26.428232",
+    "mentions": [
+      "emma"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0008",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "ivan",
+    "text": "Reminder: We have a sync at 3 PM to discuss the motor assembly's progress.",
+    "timestamp": "2026-01-28T10:14:23.869166",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0055",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "ivan",
+    "text": "Quick check-in: Are all parts available for this week's motor assembly test?",
+    "timestamp": "2026-01-28T09:48:20.463054",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0012",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "julia",
+    "text": "If the motor assembly doesn't align by end of day, we'll need a backup plan. @david, any ideas?",
+    "timestamp": "2026-01-28T08:54:37.250818",
+    "mentions": [
+      "david"
+    ],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0036",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "frank",
+    "text": "Team lunch on Friday? Let\u2019s vote for pizza or tacos! \ud83c\udf55\ud83c\udf2e",
+    "timestamp": "2026-01-28T08:53:31.315466",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0059",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "alice",
+    "text": "Meeting postponed to later today. Check calendar for new time slot.",
+    "timestamp": "2026-01-28T08:47:57.655484",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0038",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "carol",
+    "text": "Is the power drill still available? Need it for adjustments.",
+    "timestamp": "2026-01-28T08:40:13.730201",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0007",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "julia",
+    "text": "Reviewing the PCB changes. Good work so far @alice, @bob. Let's sync later on outstanding issues.",
+    "timestamp": "2026-01-28T08:11:17.904768",
+    "mentions": [
+      "alice",
+      "bob"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0037",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "bob",
+    "text": "Re-routing a few lines on the V3 board to mitigate interference. Will send an update soon.",
+    "timestamp": "2026-01-28T08:10:22.014705",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0004",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "bob",
+    "text": "@alice The PCB traces near the regulators seem too close. Can you double-check clearance specs?",
+    "timestamp": "2026-01-28T07:52:48.786353",
+    "mentions": [
+      "alice"
+    ],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0023",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "emma",
+    "text": "Can I grab an oscilloscope from electrical to test motor voltages?",
+    "timestamp": "2026-01-28T07:30:00.401338",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0047",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "carol",
+    "text": "Does anyone have experience with tuning the PID on the new motor controller?",
+    "timestamp": "2026-01-28T07:24:19.578406",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0052",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "david",
+    "text": "Adjusting the gear mesh spacing solved the noise issue. Nice catch, @emma.",
+    "timestamp": "2026-01-28T06:53:23.680929",
+    "mentions": [
+      "emma"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0029",
+    "channel": "#firmware",
+    "thread_id": null,
+    "sender": "bob",
+    "text": "Quick question about the ADC setup. Does it handle differential inputs by default?",
+    "timestamp": "2026-01-28T06:13:41.896388",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0014",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "alice",
+    "text": "Checked the motor connection. Seems the wiring harness might be the issue, @frank.",
+    "timestamp": "2026-01-27T21:51:49.912298",
+    "mentions": [
+      "frank"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0061",
+    "channel": "#pcb-review",
+    "thread_id": null,
+    "sender": "bob",
+    "text": "IC4 replacement worked well, resolves the overheating issue. Thanks for the suggestion @carol.",
+    "timestamp": "2026-01-27T17:55:48.798138",
+    "mentions": [
+      "carol"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0027",
+    "channel": "#electrical",
+    "thread_id": null,
+    "sender": "carol",
+    "text": "Found the documentation on our resistor values! Uploading to the shared folder now.",
+    "timestamp": "2026-01-27T16:03:28.693086",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0011",
+    "channel": "#firmware",
+    "thread_id": null,
+    "sender": "henry",
+    "text": "Verified communication protocols are stable. No lost packets in the last 1000 cycles.",
+    "timestamp": "2026-01-27T15:18:03.668044",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0002",
+    "channel": "#firmware",
+    "thread_id": null,
+    "sender": "grace",
+    "text": "Latest firmware update is deployed on test units. Please report any anomalies.",
+    "timestamp": "2026-01-27T14:33:43.106322",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0001",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "david",
+    "text": "Running into alignment issues with the new gear sets. Any suggestions, @emma?",
+    "timestamp": "2026-01-27T13:55:33.437097",
+    "mentions": [
+      "emma"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0022",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "grace",
+    "text": "Debugged the I2C issue. Seems like a clock stretching problem. @david, can you confirm?",
+    "timestamp": "2026-01-27T13:40:09.574790",
+    "mentions": [
+      "david"
+    ],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0058",
+    "channel": "#embedded",
+    "thread_id": null,
+    "sender": "grace",
+    "text": "Check your inboxes for the updated software integration guide. It's a lifesaver.",
+    "timestamp": "2026-01-27T12:32:48.172820",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0025",
+    "channel": "#mechanical",
+    "thread_id": null,
+    "sender": "ivan",
+    "text": "Who's taking point on the new motor design review?",
+    "timestamp": "2026-01-27T12:03:51.010596",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0040",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "david",
+    "text": "Connector J4 is consistently causing short circuits. @alice, can you take a look?",
+    "timestamp": "2026-01-27T08:28:33.674848",
+    "mentions": [
+      "alice"
+    ],
+    "is_dm": false,
+    "is_urgent": true,
+    "is_blocker": true
+  },
+  {
+    "id": "msg_0034",
+    "channel": "#motor-debug",
+    "thread_id": null,
+    "sender": "emma",
+    "text": "@frank Response test passed on two units. Fantastic news!",
+    "timestamp": "2026-01-27T08:11:47.785787",
+    "mentions": [
+      "frank"
+    ],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  },
+  {
+    "id": "msg_0003",
+    "channel": "#embedded",
+    "thread_id": null,
+    "sender": "ivan",
+    "text": "Team, how's the firmware testing coming along? Do we need more resources?",
+    "timestamp": "2026-01-27T06:27:08.841291",
+    "mentions": [],
+    "is_dm": false,
+    "is_urgent": false,
+    "is_blocker": false
+  }
+]

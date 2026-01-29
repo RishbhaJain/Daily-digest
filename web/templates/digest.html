@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digest for {{ user_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .project-group {
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            border-left: 4px solid #ddd;
+            transition: all 0.2s;
+        }
+
+        .project-group:hover {
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-group-header {
+            padding: 20px;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.2s;
+        }
+
+        .project-group-header:hover {
+            background: #f8f9fa;
+        }
+
+        .project-group-header h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .toggle-icon {
+            font-size: 0.8em;
+            transition: transform 0.3s;
+            color: #666;
+        }
+
+        .project-group.expanded .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .ai-summary {
+            color: #555;
+            line-height: 1.5;
+            margin: 10px 0;
+            font-size: 0.95em;
+        }
+
+        .message-count {
+            color: #888;
+            font-size: 0.85em;
+            font-weight: normal;
+        }
+
+        .project-group-items {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: #f8f9fa;
+        }
+
+        .project-group.expanded .project-group-items {
+            max-height: 5000px;
+            transition: max-height 0.5s ease-in;
+        }
+
+        .project-group-items-inner {
+            padding: 15px 20px;
+        }
+
+        .message-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border-left: 3px solid #e0e0e0;
+        }
+
+        .message-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .message-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .sender-name {
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .message-time {
+            color: #999;
+            font-size: 0.85em;
+        }
+
+        .message-channel {
+            color: #888;
+            font-size: 0.85em;
+        }
+
+        .message-text {
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .urgent-group {
+            border-left-color: #dc3545;
+        }
+
+        .active-group {
+            border-left-color: #667eea;
+        }
+
+        .review-group {
+            border-left-color: #6c757d;
+        }
+
+        .click-to-expand {
+            color: #667eea;
+            font-size: 0.85em;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Digest for {{ user_name }}</h1>
+            <p class="subtitle">Generated on {{ generated_at }}</p>
+            <a href="/" class="btn-secondary">← Back to Home</a>
+        </header>
+
+        <main>
+            <!-- Urgent Section -->
+            {% if digest.urgent %}
+            <section class="digest-section urgent-section">
+                <h2>🚨 Urgent ({{ digest.urgent | length }} projects)</h2>
+                <div class="groups-list">
+                    {% for group in digest.urgent %}
+                    <div class="project-group urgent-group" onclick="toggleGroup(this)">
+                        <div class="project-group-header">
+                            <h3>
+                                <span>
+                                    {{ group.project_name }}
+                                    <span class="message-count">({{ group.message_count }} messages)</span>
+                                </span>
+                                <span class="toggle-icon">▼</span>
+                            </h3>
+                            <p class="ai-summary">{{ group.summary }}</p>
+                            <p class="click-to-expand">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 4l-4 4h8l-4-4z"/>
+                                    <path d="M8 12l4-4H4l4 4z"/>
+                                </svg>
+                                Click to see individual messages
+                            </p>
+                        </div>
+                        <div class="project-group-items">
+                            <div class="project-group-items-inner">
+                                {% for item in group.items %}
+                                <div class="message-item">
+                                    <div class="message-header">
+                                        <span class="sender-name">{{ item.sender }}</span>
+                                        {% if item.is_blocker %}
+                                        <span class="tag blocker-tag">BLOCKER</span>
+                                        {% endif %}
+                                        {% if item.is_urgent %}
+                                        <span class="tag urgent-tag">URGENT</span>
+                                        {% endif %}
+                                        <span class="message-channel">{{ item.channel }}</span>
+                                        <span class="message-time">{{ item.timestamp }}</span>
+                                    </div>
+                                    <div class="message-text">{{ item.summary }}</div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
+
+            <!-- Active Projects Section -->
+            {% if digest.active %}
+            <section class="digest-section active-section">
+                <h2>📌 Active Projects ({{ digest.active | length }} projects)</h2>
+                <div class="groups-list">
+                    {% for group in digest.active %}
+                    <div class="project-group active-group" onclick="toggleGroup(this)">
+                        <div class="project-group-header">
+                            <h3>
+                                <span>
+                                    {{ group.project_name }}
+                                    <span class="message-count">({{ group.message_count }} messages)</span>
+                                </span>
+                                <span class="toggle-icon">▼</span>
+                            </h3>
+                            <p class="ai-summary">{{ group.summary }}</p>
+                            <p class="click-to-expand">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 4l-4 4h8l-4-4z"/>
+                                    <path d="M8 12l4-4H4l4 4z"/>
+                                </svg>
+                                Click to see individual messages
+                            </p>
+                        </div>
+                        <div class="project-group-items">
+                            <div class="project-group-items-inner">
+                                {% for item in group.items %}
+                                <div class="message-item">
+                                    <div class="message-header">
+                                        <span class="sender-name">{{ item.sender }}</span>
+                                        <span class="message-channel">{{ item.channel }}</span>
+                                        <span class="message-time">{{ item.timestamp }}</span>
+                                    </div>
+                                    <div class="message-text">{{ item.summary }}</div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
+
+            <!-- Review Section -->
+            {% if digest.review %}
+            <section class="digest-section review-section">
+                <h2>📋 Review ({{ digest.review | length }} projects)</h2>
+                <p class="section-description">Lower priority items from projects you're monitoring</p>
+                <div class="groups-list">
+                    {% for group in digest.review %}
+                    <div class="project-group review-group" onclick="toggleGroup(this)">
+                        <div class="project-group-header">
+                            <h3>
+                                <span>
+                                    {{ group.project_name }}
+                                    <span class="message-count">({{ group.message_count }} messages)</span>
+                                </span>
+                                <span class="toggle-icon">▼</span>
+                            </h3>
+                            <p class="ai-summary">{{ group.summary }}</p>
+                            <p class="click-to-expand">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 4l-4 4h8l-4-4z"/>
+                                    <path d="M8 12l4-4H4l4 4z"/>
+                                </svg>
+                                Click to see individual messages
+                            </p>
+                        </div>
+                        <div class="project-group-items">
+                            <div class="project-group-items-inner">
+                                {% for item in group.items %}
+                                <div class="message-item">
+                                    <div class="message-header">
+                                        <span class="sender-name">{{ item.sender }}</span>
+                                        <span class="message-channel">{{ item.channel }}</span>
+                                        <span class="message-time">{{ item.timestamp }}</span>
+                                    </div>
+                                    <div class="message-text">{{ item.summary }}</div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
+
+            <!-- Empty State -->
+            {% if not digest.urgent and not digest.active and not digest.review %}
+            <section class="digest-section">
+                <div class="empty-state">
+                    <h2>📭 No Messages</h2>
+                    <p>No relevant messages found in the past 24 hours.</p>
+                    <p>This could mean:</p>
+                    <ul>
+                        <li>All your projects are in "done" phase</li>
+                        <li>No new messages in your active projects</li>
+                        <li>You haven't been mentioned recently</li>
+                    </ul>
+                </div>
+            </section>
+            {% endif %}
+        </main>
+
+        <footer>
+            <p>EverCurrent Daily Digest Tool - AI-Powered Summaries</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleGroup(element) {
+            element.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>
