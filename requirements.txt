@@ -5,7 +5,7 @@ Flask==3.0.0
 gunicorn==21.2.0
 
 # OpenAI API
-openai==1.6.1
+openai>=1.30.0
 
 # Optional: For better development experience
 python-dotenv==1.0.0

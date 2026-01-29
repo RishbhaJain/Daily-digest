@@ -13,8 +13,10 @@ from models import Message, UserProjectState, Digest, DigestItem, ProjectGroup
 try:
     from openai import OpenAI
     OPENAI_AVAILABLE = True
-except ImportError:
+    print("✓ OpenAI package imported successfully")
+except ImportError as e:
     OPENAI_AVAILABLE = False
+    print(f"✗ OpenAI package import failed: {e}")
 
 
 class DigestGenerator:
@@ -34,11 +36,14 @@ class DigestGenerator:
         if self.use_ai_summaries:
             try:
                 self.client = OpenAI()  # Uses OPENAI_API_KEY env var
-            except Exception:
+                print("✓ OpenAI client initialized successfully")
+            except Exception as e:
+                print(f"✗ OpenAI client initialization failed: {e}")
                 self.use_ai_summaries = False
                 self.client = None
         else:
             self.client = None
+            print("AI summaries disabled (use_ai_summaries=False)")
 
     def generate(
         self,
