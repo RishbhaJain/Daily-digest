@@ -234,6 +234,45 @@ Done projects come back to "review" when:
 - ✅ [test_pipeline.py](test_pipeline.py) - Pipeline tests
 - ✅ [run_web_ui.py](run_web_ui.py) - Web UI launcher
 
+## Deployment
+
+### Deploy to Render (Free Hosting)
+
+1. **Push to GitHub** (already done!)
+
+2. **Go to [Render](https://render.com)** and sign up/login
+
+3. **Create a New Web Service**
+   - Click "New +" → "Web Service"
+   - Connect your GitHub account
+   - Select the `Daily-digest` repository
+
+4. **Configure the service**
+   - **Name**: `daily-digest` (or your choice)
+   - **Environment**: `Python 3`
+   - **Build Command**: `pip install -r requirements.txt`
+   - **Start Command**: `gunicorn -w 4 -b 0.0.0.0:$PORT web.app:app`
+   - **Instance Type**: Free
+
+5. **Add Environment Variables**
+   - Click "Environment" tab
+   - Add: `OPENAI_API_KEY` = your OpenAI API key
+
+6. **Deploy**
+   - Click "Create Web Service"
+   - Wait 2-3 minutes for deployment
+   - Your app will be live at: `https://daily-digest-xxxx.onrender.com`
+
+**Note**: Free tier sleeps after 15 minutes of inactivity and takes ~30 seconds to wake up.
+
+### Alternative: Deploy to Railway
+
+1. Go to [Railway](https://railway.app)
+2. Click "New Project" → "Deploy from GitHub"
+3. Select your repository
+4. Add `OPENAI_API_KEY` environment variable
+5. Deploy!
+
 ## Next Steps (Production)
 
 For a production deployment:
