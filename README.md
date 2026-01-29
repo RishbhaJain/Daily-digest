@@ -12,6 +12,44 @@ The system implements the architecture described in [class-summary.md](class-sum
 - **Anomaly Detection**: Re-activates "done" projects when you're mentioned
 - **AI-Powered Summaries**: OpenAI-generated summaries for each project group with expandable details
 
+## Implementation Flow
+
+See how this system was built step-by-step:
+
+```mermaid
+graph TD
+    Start([Start Project]) --> Step1[1. Define Data Models<br/>models.py]
+    Step1 --> Step2[2. Build Storage Layer<br/>storage.py]
+    Step2 --> Step3[3. Generate Mock Data<br/>generate_mock_data.py]
+    Step3 --> Step4[4. Project Extraction<br/>project_extractor.py]
+    Step4 --> Step5[5. State Management<br/>project_state_manager.py]
+    Step5 --> Step6[6. Relevance Ranking<br/>ranking.py]
+    Step6 --> Step7[7. Digest Generation<br/>digest_generator.py]
+    Step7 --> Step8[8. Main Pipeline<br/>digest_pipeline.py]
+    Step8 --> Step9[9. Web Interface<br/>web/app.py + templates]
+    Step9 --> Step10[10. Testing<br/>test_pipeline.py]
+    Step10 --> Step11[11. Deployment Setup<br/>Procfile, requirements.txt]
+    Step11 --> Step12[12. GitHub & Hosting<br/>Render deployment]
+    Step12 --> End([Live Application])
+
+    style Start fill:#e1f5e1
+    style End fill:#e1f5e1
+    style Step1 fill:#cce5ff
+    style Step2 fill:#cce5ff
+    style Step3 fill:#cce5ff
+    style Step4 fill:#cce5ff
+    style Step5 fill:#cce5ff
+    style Step6 fill:#cce5ff
+    style Step7 fill:#cce5ff
+    style Step8 fill:#cce5ff
+    style Step9 fill:#cce5ff
+    style Step10 fill:#cce5ff
+    style Step11 fill:#ffe5cc
+    style Step12 fill:#ffe5cc
+```
+
+[View detailed implementation flow →](IMPLEMENTATION_FLOW.md)
+
 ## Project Structure
 
 ```
