@@ -6,7 +6,7 @@
 graph TD
     Start([Start Project]) --> Step1[1. Define Data Models<br/>models.py]
 
-    Step1 --> Entities["Created Dataclasses:<br/>• Message<br/>• Project<br/>• UserProjectState<br/>• DigestItem<br/>• ProjectGroup<br/>• Digest"]
+    Step1 --> Entities["Created Dataclasses:<br/>• Message<br/>• User<br/>• Project<br/>• UserProjectState<br/>• DigestItem<br/>• ProjectGroup<br/>• Digest"]
 
     Entities --> Step2[2. Build Storage Layer<br/>storage.py]
 
